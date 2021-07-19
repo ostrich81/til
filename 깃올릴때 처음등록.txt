@@ -1,0 +1,70 @@
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws
+$ git clone https://lab.ssafy.com/djr53rt/hws.git
+Cloning into 'hws'...
+
+arning: You appear to have cloned an empty repository.
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws
+$
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws
+$
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws
+$ git clone https://lab.ssafy.com/djr53rt/hws.git
+Cloning into 'hws'...
+warning: You appear to have cloned an empty repository.
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws
+$ git clone https://lab.ssafy.com/djr53rt/hws.git
+fatal: destination path 'hws' already exists and is not an empty directory.
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws
+$ git clone https://lab.ssafy.com/djr53rt/hws.git .
+fatal: destination path '.' already exists and is not an empty directory.
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws
+$ git clone https://lab.ssafy.com/djr53rt/hws.git.
+fatal: could not create work tree dir 'hws.git.': Invalid argument
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws
+$ git clone https://lab.ssafy.com/djr53rt/hws.git .
+fatal: destination path '.' already exists and is not an empty directory.
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws
+$ $ git clone https://lab.ssafy.com/djr53rt/hws.git .
+bash: $: command not found
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws
+$  git clone https://lab.ssafy.com/djr53rt/hws.git .
+Cloning into '.'...
+warning: You appear to have cloned an empty repository.
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws (master)
+$ git push
+error: src refspec refs/heads/master does not match any
+error: failed to push some refs to 'https://lab.ssafy.com/djr53rt/hws.git'
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws (master)
+$ git add .
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws (master)
+$ git commit -m "0719"
+[master (root-commit) 804f674] 0719
+ 2 files changed, 4 insertions(+)
+ create mode 100644 0719_homework.md.md
+ create mode 100644 0719_workshop.md.md
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 226 bytes | 226.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://lab.ssafy.com/djr53rt/hws.git
+ * [new branch]      master -> master
+
+djr53@DESKTOP-00HG45C MINGW64 ~/OneDrive/바탕 화면/ssafy6/hws (master)
