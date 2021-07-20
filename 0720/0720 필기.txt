@@ -1,0 +1,136 @@
+파이썬이 자바보다 오래됨 
+공동 작업과 유지보수가 매우 쉽고 편함 
+
+예약어란 식별자- 변수 , 이름에 쓸수 없는 것들 
+
+이스케이프 시퀀스란 무엇인가 
+
+string interpoation - 보간법 
+
+n=5
+m=8
+print((('*' * n) + '\n' ) * m )
+
+띄어쓰기의 중요성 
+
+수학 - latex - 마크다운에서만 씀 
+
+리스트에서 len  그 항목수 
+항목 숫자 세는건 . count ()
+리스트를 (리스트이름)
+최소 min () 
+최대 max
+
+bin(), oct(), hex()
+
+round() 반올림방식 (값, 소수점자리수)
+abs()- 절대값 을 반환
+epsilon 부동소수점 연산에서 반올림해서 오차상환 
+import math 
+math.isclose(a,b)
+
+complex -복소수
+
+print('hey'*3+' ho!')
+
+0은 bool 에서 거짓 
+0, 0.0 () [] {} None 다거짓
+
+%나머지 출력 
+//몫 
+divmod (몫 과 나머지)
+
+3!=3 (false)
+같지않음 != 
+
+복합 연산자 !!
+연산자	내용
+a += b	a = a + b
+a -= b	a = a - b
+a *= b	a = a * b
+a /= b	a = a / b
+a //= b	a = a // b
+a %= b	a = a % b
+a **= b	a = a ** b
+
+~ 안에 있다 in 
+
+tuple 1개짜리는 (,) 콤마 꼭 해줘야됨 
+
+암시적 형변환 - 자동변환
+명시적 형변환 - 수동변환 
+
+컨테이너  = 자료구조 
+시퀀스 - 순서가 있는 데이터
+비시퀀스 - 순서가 없는 데이터 
+
+튜플- 불변 
+
+순서뒤집기 
+a = 'hello'
+a[::-1]
+
+
+w 끼우기 
+a = ["h","i"]
+c = ["b","y","e"]
+print (a+c)
+print([*a, 'w' , *c])
+
+
+꿀팁 리스트 쪼개기 
+listall = list(range(10))
+lista = listall[:5]
+listb = listall[5:]
+print(listall)
+print(lista)
+print(listb)
+new_list =[*listb, *lista]
+print(new_list)
+
+
+
+목록  - 가변인자를 활용한 리스트 쪼개기 
+numbers = [1, 2, 3, 4, 5, 6]
+*a, = numbers
+print(*a)
+*a, b = numbers
+print(*a, '///', b)
+a, *b = numbers
+print(a, '///', *b)
+a, *b, c = numbers
+print(a, '/', *b, '/', c)
+a, b, *lista, c = numbers
+print(a, '/', b, '/', *lista , '/', c)
+
+1 2 3 4 5 6
+1 2 3 4 5 /// 6
+1 /// 2 3 4 5 6
+1 / 2 3 4 5 / 6
+1 / 2 / 3 4 5 / 6
+
+차집합 - 
+합집합 |
+set은 중복제거에 효과적 , but 순서가 보장되지 않음 
+
+mutable 
+-list
+-dict
+-set
+immutable 
+-range
+-tuple
+-frozenset
+-literal (number string bool)
+--deeepcopy ... 
+
+반복문 
+while - 조건문 (~할 때까지 ) 
+for - 횟수 
+
+enumerate - ~번째 구분할때 사용함 
+반복문 제어 for를 break로 아예 멈춤 그이후를 아예안함 
+continue  하나 건너 뛰고 다음 구문 진행(0124) 
+else 브레이크가 안잡히면 맨끝에 한번 마무리 실행 
+ pass 그냥 진행하는 거  (01234) 
+
