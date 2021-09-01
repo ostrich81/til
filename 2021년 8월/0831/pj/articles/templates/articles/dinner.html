@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% comment "" %}dtl 주석{% endcomment %}
+<!-- html 주석-->
+    <h1>오늘저녁 은 {{pick}}임</h1>
+    <p>{{no|default:'nothing'}}</p>
+  <ul>
+   
+    {% for food in foods %}
+    <li>{{ food|upper}}</li>
+    {% endfor %}
+  </ul>
+
+  <p>{{foods|join:", "}}</p>
+{% endblock content %}
