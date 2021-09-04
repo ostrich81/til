@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<br><br>
+    <h1 class="fw-bold">영화 목록</h1>
+    <br>
+    <br>
+    {% for movie in movies %}
+    <a href="{% url 'movies:detail' movie.pk %}" class="text-decoration-none fs-3 text-muted" >영화 제목:  {{movie.title}}</a><br>
+    <img src="{{movie.poster_path}}" style="width:400px;height:400px"  alt="이미지 링크 오류"><br><br>
+    <a href="{% url 'movies:detail' movie.pk %}" type="button" class="btn btn-dark btn-lg"class="text-decoration-none"  >영화 상세 조회</a>
+    <br><br><br><br>
+    {% endfor %}
+{% endblock content %}
+
+

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="fw-bold">신작</h1>
+
+<form action="{% url 'movies:create' %}"method='POST'>
+    {% csrf_token %}
+    <label for="title">영화 제목:</label>
+    <input type="text"id='title'name='title'><br><br>
+    <label for="overview">줄거리:</label>
+    <textarea name="overview" id="overview" cols="40" rows="15"></textarea><br>
+    <label for="poster_path">포스터:</label>
+    <input type="text"id='poster_path'name='poster_path'>
+    <br><br>
+    <input type="submit" value='작성'>
+</form>
+
+<a href="{% url 'movies:index' %}"class='text-decoration-none'>돌아가기</a>
+
+
+{% endblock content %}
+
+
+

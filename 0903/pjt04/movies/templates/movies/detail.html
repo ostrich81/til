@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<br><br>
+    <h1 class="fw-bold">영화 소개</h1>
+    <hr>
+    <h3>영화 제목:  {{movie.title}}</h3>
+    <br>
+    <h4>줄거리:  {{movie.overview}}</h4>
+    <br>
+    <p>
+    
+    <img src="{{movie.poster_path}}" style="width:600px;height:600px"  alt="이미지 링크 오류">
+    </p>
+    <p>작성일:{{movie.created_at}}</p>
+    <p>수정일:{{movie.updated_at}}</p>
+    <hr>
+    <hr>
+    <div class="d-flex flex-row">
+    <a href="{% url 'movies:edit' movie.pk %}" class='btn btn-primary m-1'>편집</a>
+
+    <form action="{% url 'movies:delete' movie.pk %}" method='POST'>
+        {% csrf_token %}
+        <button class='btn btn-danger m-1'>삭제</button>
+    </form>
+    </div>  
+    <br>
+    <a href="{% url 'movies:index'%}"class='text-decoration-none'>영화 목록으로 돌아가기</a>
+
+{% endblock content %}
+
