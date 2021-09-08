@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render
-from .models import Article 
 from .forms import ArticleForm
+from .models import Article 
 # Create your views here.
 def index(request):
     articles=Article.objects.all()
