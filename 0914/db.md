@@ -227,3 +227,39 @@ users_user = 테이블 이름
 def __str__(self):
 
   return f'{self.pk}:[{self.last_name} {self.first_name}]'
+
+참고사이트
+
+[Making queries | Django documentation | Django (djangoproject.com)](https://docs.djangoproject.com/en/3.2/topics/db/queries/)
+
+[QuerySet API reference | Django documentation | Django (djangoproject.com)](https://docs.djangoproject.com/en/3.2/ref/models/querysets/)
+
+gt greater than 
+
+gte 크거나 같은 
+
+greater than or equal to 
+
+스타트 위드 뭐시기 =뭐시기 % 랑 같음 
+
+엔드위드 뭐시기= %뭐시기 랑 같음 
+
+i 붙이면 대소문자 구분 
+
+필터하고 , 넣으면 and 연산 둘다 만족해야됨 
+
+ Q 가 or 임 중요 
+
+검색기능 - %뭐시기%
+
+contains 로 쓰면됨 
+
+form 에서 검색어 
+
+어그리게이션
+
+특정필드 전체의 합 평균 개수등읠 계산할때 사용 
+
+어노테이트 주석을 달다 
+
+sql 테이블 
