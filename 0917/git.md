@@ -8,3 +8,4 @@ git status
 
 git log --oneline 
 
+git merge
